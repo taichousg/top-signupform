@@ -1,10 +1,25 @@
 @font-face { font-family: Norse-Bold; src: url('assets/Norse-Bold.otf'); }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 h1 {
     font-family: Norse-Bold;
     font-size: 60px;
     color: white;
     text-align: center;
+}
+
+h3 {
+    text-align: left;
+    background-color: white;
 }
 
 #container {
@@ -15,17 +30,22 @@ h1 {
     align-content: stretch;
 }
 
+#blackbar {
+    display: flex;
+    background-color: black;
+    flex: 1 1 10vh;
+}
+
 #left-side {
     display: flex;
     flex-direction: column;
-    flex: 0 1 auto;
     padding: 1px;
     background-image: url("assets/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border: black 1px solid;
-    flex: 1 1 50vh;
+    flex: 1 1 25vh;
     height: 90vh;
     align-content: center;
     justify-content: space-around;
@@ -34,11 +54,10 @@ h1 {
 
 #logo {
     display: flex;
-    /*flex: 1 1 100%;*/
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgba(7, 7, 7, 0.5); /* Red background with 50%*/
+    background-color: rgba(7, 7, 7, 0.5); /* Black background with 50%*/
 }
 
 img {
@@ -63,11 +82,68 @@ a {
 #right-side {
     display: flex;
     flex-direction: column;
-    flex: 1 1 50vh;
+    flex: 1 1 55vh;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     align-content: center;
     padding: 20px;
-    border: blue 1px solid;
-    height: 90vh;
+    background-color: #f3f4f6;
+}
+
+#middle-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#account-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex-wrap: wrap;
+    height: 50vh;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#div-line {
+    display: flex;
+    flex-direction: row;
+}
+
+#line1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+label {
+    font-size: 12px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 12px 28px;
+    margin-top: 10px;
+    width: fit-content;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+#div-input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 10px black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border: 10px blue;
 }
